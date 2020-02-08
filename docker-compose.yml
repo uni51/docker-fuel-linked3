@@ -1,0 +1,21 @@
+version: "3"
+services:
+  web:
+    container_name: fuel_app_sample
+    build:
+      context: ./docker/apache-php
+    ports: 
+      - 80:80
+    privileged: true
+    links:
+      - db    
+    volumes:
+      - "./fuel_app/:/var/www"
+      - "./docker/apache-php/apache.conf:/etc/httpd/conf/httpd.conf"
+  db:
+    container_name: fuel_db_sample
+    build:
+      context: ./docker/db
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: fuel_db

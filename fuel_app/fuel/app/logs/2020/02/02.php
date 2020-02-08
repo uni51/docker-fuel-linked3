@@ -1,0 +1,19 @@
+<?php defined('COREPATH') or exit('No direct script access allowed'); ?>
+
+ERROR - 2020-02-02 10:49:41 --> Error - Object class "Fuel\Core\Validation" could not be converted to string or sanitized as ArrayAccess. Whitelist it in security.whitelisted_classes in app/config/config.php to allow it to be passed unchecked. in /Users/starboard/Development/fuel_linked/fuel_app/fuel/core/classes/security.php on line 268
+ERROR - 2020-02-02 14:37:31 --> Error - Got an unexpected response from host on command: [.] expecting: 250 received:  in /Users/starboard/Development/fuel_linked/fuel_app/fuel/packages/email/classes/email/driver/smtp.php on line 306
+ERROR - 2020-02-02 14:49:48 --> Error - syntax error, unexpected '$e' (T_VARIABLE), expecting ',' or ')' in /Users/starboard/Development/fuel_linked/fuel_app/fuel/app/classes/controller/contact.php on line 64
+ERROR - 2020-02-02 15:28:28 --> 0 - /Users/starboard/Development/fuel_linked/fuel_app/fuel/app/classes/model/article.php already exists, use -f or --force to override. in /Users/starboard/Development/fuel_linked/fuel_app/fuel/packages/oil/classes/generate.php on line 1592
+ERROR - 2020-02-02 15:28:54 --> 0 - /Users/starboard/Development/fuel_linked/fuel_app/fuel/app/classes/model/article.php already exists, use -f or --force to override. in /Users/starboard/Development/fuel_linked/fuel_app/fuel/packages/oil/classes/generate.php on line 1592
+ERROR - 2020-02-02 15:29:22 --> 0 - /Users/starboard/Development/fuel_linked/fuel_app/fuel/app/classes/model/article.php already exists, use -f or --force to override. in /Users/starboard/Development/fuel_linked/fuel_app/fuel/packages/oil/classes/generate.php on line 1592
+ERROR - 2020-02-02 15:30:19 --> 0 - /Users/starboard/Development/fuel_linked/fuel_app/fuel/app/classes/model/article.php already exists, use -f or --force to override. in /Users/starboard/Development/fuel_linked/fuel_app/fuel/packages/oil/classes/generate.php on line 1592
+ERROR - 2020-02-02 15:46:43 --> Fatal Error - Class 'Orm\Model' not found in /Users/starboard/Development/fuel_linked/fuel_app/fuel/app/classes/model/article.php on line 3
+ERROR - 2020-02-02 16:03:53 --> Fatal Error - Class 'Orm\Model' not found in /Users/starboard/Development/fuel_linked/fuel_app/fuel/app/classes/model/item.php on line 4
+ERROR - 2020-02-02 16:19:25 --> Error - Call to a member function limit() on null in /Users/starboard/Development/fuel_linked/fuel_app/fuel/app/classes/controller/item.php on line 7
+ERROR - 2020-02-02 16:27:55 --> Error - Call to a member function count() on null in /Users/starboard/Development/fuel_linked/fuel_app/fuel/app/classes/controller/item.php on line 7
+ERROR - 2020-02-02 16:28:52 --> Error - Access to undeclared static property: Fuel\Core\Pagination::$per_page in /Users/starboard/Development/fuel_linked/fuel_app/fuel/app/classes/controller/item.php on line 17
+ERROR - 2020-02-02 16:35:27 --> Notice - Undefined variable: pagenation in /Users/starboard/Development/fuel_linked/fuel_app/fuel/app/views/item/index.php on line 26
+ERROR - 2020-02-02 17:01:41 --> Fatal Error - Method Fuel\Core\Pagination::__toString() must not throw an exception, caught RuntimeException: Not enough segments in the URI, impossible to insert the page number in /Users/starboard/Development/fuel_linked/fuel_app/fuel/app/views/item/index.php on line 0
+ERROR - 2020-02-02 20:15:51 --> Notice - Undefined variable: data in /Users/starboard/Development/fuel_linked/fuel_app/fuel/app/classes/controller/user.php on line 21
+ERROR - 2020-02-02 20:16:38 --> Notice - Undefined variable: subnav in /Users/starboard/Development/fuel_linked/fuel_app/fuel/app/views/user/index.php on line 2
+ERROR - 2020-02-02 20:17:40 --> Notice - Undefined variable: subnav in /Users/starboard/Development/fuel_linked/fuel_app/fuel/app/views/user/login.php on line 2

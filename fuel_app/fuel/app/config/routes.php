@@ -18,7 +18,7 @@ return array(
 	 *
 	 */
 
-    '_root_'  => 'sample/index',  // The default route
+    '_root_'  => 'welcome/index',  // The default route
 
 	/**
 	 * -------------------------------------------------------------------------

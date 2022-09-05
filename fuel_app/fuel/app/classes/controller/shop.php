@@ -2,9 +2,18 @@
 class Controller_Shop extends Controller {
 
     public function action_index() {
-        $data = array();
-        $data['rows'] = Model_Item::find_all();
+        return View::forge('shop/index');
+    }
 
-        return View::forge('shop/index', $data);
+    public function action_save() {
+        $item = Model_Item::forge();
+
+        $data = array();
+        $data['item_name'] = Input::post('item_name');
+        $data['price'] = Input::post('price');
+        $item->set($data);
+        $item->save();
+
+        print('Saved!!');
     }
 }

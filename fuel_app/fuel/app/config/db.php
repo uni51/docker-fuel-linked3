@@ -21,5 +21,23 @@
  */
 
 return array(
+    'active' => 'default',
 
+    /**
+     * Base config, just need to set the DSN, username and password in env. config.
+     */
+    'default' => array(
+        'type'        => 'mysql',
+        'connection'  => array(
+            'hostname' => 'localhost',
+            'database' => 'fuel_db',
+            'username' => 'root',
+            'password' => 'root',
+            'persistent' => false,
+        ),
+        'table_prefix' => '',
+        'charset'      => 'utf8',
+        'enable_cache' => false,
+        'profiling'    => false,
+    ),
 );

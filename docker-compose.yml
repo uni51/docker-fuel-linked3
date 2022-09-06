@@ -16,6 +16,8 @@ services:
     container_name: fuel_db_sample
     build:
       context: ./docker/db
+    volumes:
+      - ./mysql/db:/var/lib/mysql
     ports:
       - '13306:3306'
     environment:

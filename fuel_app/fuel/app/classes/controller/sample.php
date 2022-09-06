@@ -3,14 +3,11 @@
 class Controller_Sample extends Controller {
 
     public function action_index() {
-        $item = Model_Item::forge();
 
-        $data = array();
-        $data['item_name'] = 'いちご';
-        $data['price'] = 80;
-        $item->set($data);
-        $item->save();
+        $rows = DB::query('SELECT * FROM items')->execute();
 
-        print('Saved!!');
+        foreach($rows as $row):
+            print($row['item_name'] . '/' . $row['price'] . "\n");
+        endforeach;
     }
 }

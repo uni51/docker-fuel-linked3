@@ -9,9 +9,18 @@ class Controller_Sample extends Controller {
 //        return View::forge('sample/index', $data);
 //    }
 
+//    public function action_index() {
+//        $view = View::forge('sample/index');
+//        $view->set('name', 'たにぐち');
+//        return $view;
+//    }
+
     public function action_index() {
         $view = View::forge('sample/index');
-        $view->set('name', 'たにぐち');
+        // 第３引数のfalseでエスケープ（オートフィルター）を無効にする
+        $view->set('html', '<p>段落です</p>', false);
+        $view->set('danger', '<script>alert\("危険だよ"\)</script>');
+
         return $view;
     }
 }
